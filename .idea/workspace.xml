@@ -5,35 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8e4c6de-b6e1-48ef-9ff6-34adc41d5b6f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/songbook/songs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/macros/definitions/beginchorus.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/macros/definitions/beginchorus.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/macros/definitions/beginsong.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/macros/definitions/beginsong.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/macros/definitions/beginverse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/macros/definitions/beginverse.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/macros/definitions/clist.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/macros/definitions/clist.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/macros/definitions/else.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/macros/definitions/else.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/macros/definitions/endchorus.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/macros/definitions/endchorus.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/macros/definitions/endverse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/macros/definitions/endverse.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/macros/definitions/example.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/macros/definitions/example.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/macros/definitions/fi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/macros/definitions/fi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/macros/definitions/ifphone.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/macros/definitions/ifphone.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/macros/definitions/memorize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/macros/definitions/memorize.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/macros/definitions/rep.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/macros/definitions/rep.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/macros/definitions/replay.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/macros/definitions/replay.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/macros/definitions/textit.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/macros/definitions/textit.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/macros/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/macros/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/macros/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/macros/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/nodeWalker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/nodeWalker.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/parser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/parser.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/Artist.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Artist.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/Line.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Line.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/Song.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Song.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/Verse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Verse.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/songs.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/songs.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +140,7 @@
       <workItem from="1767432506144" duration="1500000" />
       <workItem from="1767533324924" duration="15000" />
       <workItem from="1767556304978" duration="5550000" />
-      <workItem from="1767561892593" duration="2639000" />
+      <workItem from="1767561892593" duration="3038000" />
     </task>
     <servers />
   </component>
