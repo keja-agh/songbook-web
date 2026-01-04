@@ -1,4 +1,4 @@
-import {Serializable, staticImplements} from "../interfaces/serializable.js";
+import {type Serializable, staticImplements} from "../interfaces/serializable.js";
 
 @staticImplements<Serializable>()
 class Line {

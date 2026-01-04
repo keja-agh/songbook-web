@@ -1,5 +1,5 @@
 import {Artist} from "./Artist.js";
-import {Serializable, staticImplements} from "../interfaces/serializable.js";
+import {type Serializable, staticImplements} from "../interfaces/serializable.js";
 import Verse from "./Verse.js";
 import Line from "./Line.js";
 

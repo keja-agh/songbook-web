@@ -1,5 +1,5 @@
-import {AddMacroArgs} from "../types.js";
-import {LatexCharsNode, LatexGroupNode, LatexMacroArgumentGroup} from "latexenc";
+import type {AddMacroArgs} from "../types.js";
+import type {LatexCharsNode, LatexGroupNode, LatexMacroArgumentGroup} from "latexenc";
 
 const clist: AddMacroArgs = [
     "clist",

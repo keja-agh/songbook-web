@@ -1,5 +1,5 @@
-import {AddMacroArgs} from "../types.js";
-import {LatexCharsNode, LatexGroupNode, LatexMacroArgumentGroup, LatexMacroArgumentOptional} from "latexenc";
+import type {AddMacroArgs} from "../types.js";
+import type {LatexCharsNode, LatexGroupNode, LatexMacroArgumentGroup, LatexMacroArgumentOptional} from "latexenc";
 import {isArtistType} from "../../../types/ArtistType.js";
 import Logger from "../../../helpers/logger.js";
 import {Artist} from "../../../types/Artist.js";

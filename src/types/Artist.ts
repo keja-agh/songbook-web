@@ -1,5 +1,5 @@
-import {ArtistType, ArtistTypeLabels} from "./ArtistType.js";
-import {Serializable, staticImplements} from "../interfaces/serializable.js";
+import {type ArtistType, ArtistTypeLabels} from "./ArtistType.js";
+import {type Serializable, staticImplements} from "../interfaces/serializable.js";
 
 @staticImplements<Serializable>()
 export class Artist {

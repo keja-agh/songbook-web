@@ -1,6 +1,6 @@
-import {createDefaultParsingContext, createDefaultTextContext, LatexNode} from "latexenc";
-import {AddMacro, MacroArgumentSpec, MacroHandlerFunc} from "./types.js";
-import * as macros from "./definitions/index.js";
+import {createDefaultParsingContext, createDefaultTextContext, type LatexNode} from "latexenc";
+import type {AddMacro, MacroArgumentSpec, MacroHandlerFunc} from "./types.js";
+import * as macros from "./definitions";
 import Song from "../../types/Song.js";
 import NodeWalker from "../nodeWalker.js";
 

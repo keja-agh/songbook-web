@@ -1,4 +1,4 @@
-import {LatexMacroNode} from "latexenc";
+import type {LatexMacroNode} from "latexenc";
 import Song from "../../types/Song.js";
 import NodeWalker from "../nodeWalker.js";
 

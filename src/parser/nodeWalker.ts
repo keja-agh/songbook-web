@@ -1,5 +1,5 @@
-import {LatexNode} from "latexenc";
-import MacroHandler from "./macros/index.js";
+import type {LatexNode} from "latexenc";
+import MacroHandler from "./macros";
 import Song from "../types/Song.js";
 import Logger from "../helpers/logger.js";
 import Verse from "../types/Verse.js";

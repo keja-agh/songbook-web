@@ -1,6 +1,5 @@
-import {AddMacroArgs} from "../types.js";
-import {LatexCharsNode, LatexMacroArgumentGroup} from "latexenc";
-import Logger from "../../../helpers/logger.js";
+import type {AddMacroArgs} from "../types.js";
+import type {LatexMacroArgumentGroup} from "latexenc";
 
 const textit: AddMacroArgs = [
     "textit",

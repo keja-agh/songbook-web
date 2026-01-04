@@ -1,5 +1,5 @@
-import {AddMacroArgs} from "../types.js";
-import {LatexCharsNode, LatexMacroArgumentGroup} from "latexenc";
+import type {AddMacroArgs} from "../types.js";
+import type {LatexCharsNode, LatexMacroArgumentGroup} from "latexenc";
 
 const rep: AddMacroArgs = [
     "rep",

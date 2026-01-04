@@ -1,4 +1,4 @@
-import {AddMacroArgs} from "../types.js";
+import type {AddMacroArgs} from "../types.js";
 
 const beginVerse: AddMacroArgs = [
     "beginverse",
