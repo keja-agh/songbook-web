@@ -1,11 +1,14 @@
 import {LatexMacroNode} from "latexenc";
+import Song from "../../types/Song.js";
+import NodeWalker from "../nodeWalker.js";
 
 export type MacroArgumentType = 'group' | 'optional' | 'star' | 'token';
 export interface MacroArgumentSpec {
     type: MacroArgumentType;
 }
 
-export type MacroHandlerFunc = (node: LatexMacroNode, song: Song) => void;
+/// if the handler returns a string, it will replace the macro node with that string (treat it as text)
+export type MacroHandlerFunc = (node: LatexMacroNode, song: Song, walker: NodeWalker) => void|string;
 
 
 export interface AddMacro {

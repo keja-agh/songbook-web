@@ -2,10 +2,11 @@ import {createDefaultParsingContext, createDefaultTextContext, LatexNode} from "
 import {AddMacro, MacroArgumentSpec, MacroHandlerFunc} from "./types.js";
 import * as macros from "./definitions/index.js";
 import Song from "../../types/Song.js";
+import NodeWalker from "../nodeWalker.js";
 
 class MacroHandlerClass implements AddMacro {
     ParsingContext = createDefaultParsingContext();
-    macroHandlers: {[key: string]: Function} = {};
+    macroHandlers: {[key: string]: MacroHandlerFunc} = {};
 
     addMacro(name: string, args: MacroArgumentSpec[], handler: MacroHandlerFunc) {
         if (this.macroHandlers[name]) {
@@ -23,13 +24,13 @@ class MacroHandlerClass implements AddMacro {
         return !!this.macroHandlers[name];
     }
 
-    handleMacro(node: LatexNode, song: Song) {
+    handleMacro(node: LatexNode, song: Song, walker: NodeWalker) {
         if (node.kind !== "macro") {
             throw new Error(`Node is not a macro: ${node.kind}`);
         }
         const handler = this.macroHandlers[node.name];
         if (handler) {
-            handler(node, song);
+            return handler(node, song, walker);
         }
     }
 }

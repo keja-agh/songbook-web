@@ -4,21 +4,21 @@ import {Serializable, staticImplements} from "../interfaces/serializable.js";
 @staticImplements<Serializable>()
 export class Artist {
     name: string;
-    type: ArtistType;
+    role: ArtistType;
 
-    get typeLabel(): string {
-        return ArtistTypeLabels[this.type];
+    get roleLabel(): string {
+        return ArtistTypeLabels[this.role];
     }
 
     constructor(name: string, type: ArtistType) {
         this.name = name;
-        this.type = type;
+        this.role = type;
     }
 
     toJSON(): string {
         return JSON.stringify({
             name: this.name,
-            type: this.type,
+            type: this.role,
         });
     }
     static fromJSON(json: string): Artist {

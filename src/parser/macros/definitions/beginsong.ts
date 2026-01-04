@@ -4,6 +4,7 @@ import {isArtistType} from "../../../types/ArtistType.js";
 import Logger from "../../../helpers/logger.js";
 import {Artist} from "../../../types/Artist.js";
 import trimChar from "../../../helpers/trimChar.js";
+import MacroHandler from "../index.js";
 
 const beginsong: AddMacroArgs = [
     "beginsong",
@@ -11,7 +12,7 @@ const beginsong: AddMacroArgs = [
         {type: "group"},
         {type: "optional"}
     ],
-    (node, song) => {
+    (node, song, walker) => {
         // parse title
         const charsNode = (node.arguments[0] as LatexMacroArgumentGroup).nodes[0];
         song.title = (charsNode as LatexCharsNode).content;
@@ -39,6 +40,12 @@ const beginsong: AddMacroArgs = [
                 if (n.kind === "chars") {
                     content += n.content;
                 }
+                if (n.kind === "macro" && MacroHandler.canHandleMacro(n.name)) {
+                    const res = MacroHandler.handleMacro(n, song, walker);
+                    if (res) {
+                        content += res.trim();
+                    }
+                }
             }
             const infoParts = content.split(";").map(part => part.trim());
             for (const part of infoParts) {
@@ -47,14 +54,16 @@ const beginsong: AddMacroArgs = [
                 const lastDotIndex = part.lastIndexOf(".");
                 if (lastDotIndex !== -1) {
                     const role = part.substring(0, lastDotIndex).trim();
-                    const name = part.substring(lastDotIndex + 1).trim();
+                    const names = part.substring(lastDotIndex + 1).trim().split(",").map(name => name.trim());
                     if (!isArtistType(role)) {
                         Logger.warn(`Unknown artist role: "${role}", in beginsong macro. This artist will be skipped!!`);
                         continue;
                     }
-                    if (name.length > 0) {
-                        const artist = new Artist(name, role)
-                        song.artists.push(artist);
+                    for (const name of names) {
+                        if (name.length > 0) {
+                            const artist = new Artist(name, role)
+                            song.artists.push(artist);
+                        }
                     }
                 }
             }
